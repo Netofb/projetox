@@ -3,14 +3,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: var(--font)
+  font-family: var(--font);
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
   --cor-primaria: #ff0000;
   --tamanho-fonte: 16px;
   --background: #262626;
-  --header-backgtound: #161616;
+  --header-backgtound: #1b1d20;
   --button-color: #d9d9d9;
   --font-color: #080d0d;
   --font: "Poppins", Arial, Helvetica, sans-serif;
@@ -20,15 +20,18 @@ body {
   background-color: var(--background);
 }
 .header {
+  background-color: #080d0d;
   padding: 40px 20px;
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   align-items: center;
-  top: 0;
-  margin: 0 auto 0 auto;
   z-index: 99999;
+}
+.logo{
+  margin: 0 0 0 3rem;
+  width: 4rem;
 }
 .header-menu {
   display: flex;
@@ -36,18 +39,21 @@ body {
   gap: 10px;
   justify-content: center;
 }
-input{
+input {
   background-color: var(--button-color);
   padding: 0px 50px 0 20px;
   border-radius: 10px;
   font-size: 1rem;
+  
 }
-.button-search{
+
+.button-search {
   background-color: var(--button-color);
   padding: 20px;
   font-family: var (--font);
   font-size: 1rem;
   font-weight: 400;
+  cursor: pointer;
 }
 .header-menu a {
   display: block;
@@ -91,7 +97,10 @@ input{
 }
 .nav {
   display: flex;
+  margin:  0 3rem 0 0;
+
 }
+
 
 @media (max-width: 800px) {
   .header {
@@ -100,7 +109,6 @@ input{
     padding: 20px;
   }
   .header-menu a {
-    
     border-radius: 5px;
     z-index: 999999;
     color: var(--button-color);
@@ -164,39 +172,78 @@ input{
     transform: rotate(-135deg);
     top: -7px;
   }
+  .card {
+  width: 360px !important;
+  height: 485px !important;
+  margin: 5rem auto 8.5rem auto !important;
+  }
+  .buttons-card{
+    margin: 0 1rem !important;
+    
+  }
 }
-.card{
-  display: flex;
+
+.main{
+  flex-wrap: nowrap;
+}
+.card {
   flex-wrap: wrap;
+  display: flex;
   margin: 5rem 0 2rem 3rem;
-  width: 404px;
+  width: 400px;
   height: 510px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 20px;
+  justify-content: center;
 }
-.img-card{
+.img-card {
   background-color: var(--header-backgtound);
   width: 100%;
-  height: 100px;
+  height: 220px;
   border-radius: 20px;
   border-radius: 20px 20px 0 0;
 }
-.card-title{
-padding: 1rem 0 0 2rem;
+.card-title {
+  padding: 0 0 0 2rem;
 }
-.card-subtitle{
+.card-subtitle {
   padding: 2rem 0 0 2rem;
   font-weight: 100;
 }
-.descricao{
+.descricao {
   padding: 3rem 0 0 2rem;
 }
-#footer{
-background-color: var(--foter-background);
-padding: 30px;
+.buttons-card{
+  display: flex;
+  margin: 0 auto ;
+  gap: 2rem;
+  
 }
-.copy{
+.card-links{
+  padding: 8px 20px;
+  margin: 0 auto;
+  background-color: #D9D9D9;
+  border: #080d0d solid 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.card-links:hover{
+  background-color: #808080;
+}
+.card-links img{
+ padding: 0 10px;
+}
+.card-text-link{
+  color: #080d0d;
+  font-size: 1.2rem;
+}
+#footer {
+  max-width: 100%;
+  background-color: var(--foter-background);
+  padding: 30px;
+}
+.copy {
   text-align: center;
   font-size: 1.3rem;
 }
-
