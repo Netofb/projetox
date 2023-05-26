@@ -1,0 +1,10 @@
+
+#footer {
+  max-width: 100%;
+  background-color: var(--foter-background);
+  padding: 30px;
+}
+.copy {
+  text-align: center;
+  font-size: 1.3rem;
+}

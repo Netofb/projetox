@@ -1,0 +1,32 @@
+
+
+.formulario{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+  width: 400px;
+  height: 510px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  gap: 1rem;
+  
+}
+.formulario-input{
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border: none;
+  border-bottom:solid 1px #080d0d;
+  border-radius: 0;
+}
+.formulario-input::placeholder{
+  font-size: 1.4rem;
+}
+.formulario-input:focus{
+  outline: none;
+}
+.formulario-button:hover{
+background-color: #1b1d20;
+}
