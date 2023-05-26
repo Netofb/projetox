@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="shortcut icon"
+      href="../imgs/LOGOSITE 1.png"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="../Styles/index.css" />
     <link rel="stylesheet" href="../Styles/header.css" />
     <link rel="stylesheet" href="../Styles/card.css" />
     <link rel="stylesheet" href="../Styles/main.css" />
     <link rel="stylesheet" href="../Styles/footer.css" />
-     <link rel="stylesheet" href="../Styles/formulario.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/formulario.css" />
+    <title>Projeto/x</title>
   </head>
   <body>
     <header class="header">
@@ -25,18 +30,24 @@
       </ul>
     </header>
     <form class="formulario">
+      <fieldset class="fieldset">Registro</fieldset>
       <input
         type="name"
         placeholder="Nome de Usuario"
         class="formulario-input"
+        maxlength="40"
+        required
       />
-      <input type="email" placeholder="email" class="formulario-input" />
-      <input type="password" placeholder="senha" class="formulario-input" />
+      <input type="email" placeholder="email" class="formulario-input" maxlength="40" required/>
+      <input type="password" placeholder="senha" class="formulario-input" required/>
       <input
         type="password"
         placeholder="Confirmar Senha"
         class="formulario-input"
+        maxlength="40"
+        required
       />
+
       <input type="submit" class="formulario-input formulario-button" />
       <p>Já é um menbro faça?<a href=""> Faça login</a></p>
     </form>
