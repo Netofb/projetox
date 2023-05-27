@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link
+    <link
       rel="shortcut icon"
       href="../imgs/LOGOSITE 1.png"
       type="image/x-icon"
@@ -31,25 +31,31 @@
     </header>
     <form class="formulario">
       <fieldset class="fieldset">Registro</fieldset>
-      <input
-        type="name"
-        placeholder="Nome de Usuario"
-        class="formulario-input"
-        maxlength="40"
-        required
-      />
-      <input type="email" placeholder="email" class="formulario-input" maxlength="40" required/>
-      <input type="password" placeholder="senha" class="formulario-input" required/>
-      <input
-        type="password"
-        placeholder="Confirmar Senha"
-        class="formulario-input"
-        maxlength="40"
-        required
-      />
+      <div class="user-box">
+        <input type="name" class="formulario-input" maxlength="40" required />
+        <label>Nome de Usuario</label>
+      </div>
+      <div class="user-box">
+        <input type="email" class="formulario-input" maxlength="40" required />
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" class="formulario-input" required />
+        <label>Senha</label>
+      </div>
+      <div class="user-box">
+        <input
+          type="password"
+          placeholder=""
+          class="formulario-input"
+          maxlength="40"
+          required
+        />
+        <label>Confirmar Senha</label>
+      </div>
 
       <input type="submit" class="formulario-input formulario-button" />
-      <p>Já é um menbro faça?<a href=""> Faça login</a></p>
+      <p>Já é um menbro faça?<a href="./index.html"> Faça login</a></p>
     </form>
 
     <footer id="footer">
