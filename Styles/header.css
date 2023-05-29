@@ -160,5 +160,10 @@ header div{
     transform: rotate(-135deg);
     top: -7px;
   }
- 
+ .search{
+  display: none;
+ }
+ .button-search{
+  display: none;
+ }
 }

@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
       rel="shortcut icon"
       href="../imgs/LOGOSITE 1.png"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="../Styles/index.css" />
     <link rel="stylesheet" href="../Styles/header.css" />
     <link rel="stylesheet" href="../Styles/card.css" />
     <link rel="stylesheet" href="../Styles/main.css" />
     <link rel="stylesheet" href="../Styles/footer.css" />
     <link rel="stylesheet" href="../Styles/formulario.css" />
-     <link rel="stylesheet" href="./Styles/login.css" />
-    <title>Registro</title>
-  </head>
-  <body>
-    <header class="header">
+    <link rel="stylesheet" href="./Styles/login.css" />
+  <title>Login</title>
+</head>
+<body>
+   <header class="header">
       <a href="../index.html" class="logo"
         ><img src="../imgs/LOGOSITE 1.png" alt="logo" class="logo"
       /></a>
       <ul class="header-menu">
         <li>
-          <a href="./login.html">login</a>
+          <a href="./registro.html">Registro</a>
+        </li>
+         <li>
+          <a href="../index.html">Home</a>
         </li>
       </ul>
     </header>
-    <form class="formulario">
-      <fieldset class="fieldset">Registro</fieldset>
+  <main>
+     <form class="formulario">
+      <fieldset class="fieldset">Login</fieldset>
       <div class="user-box">
         <input type="name" class="formulario-input" maxlength="40" required />
         <label>Nome de Usuario</label>
       </div>
-      <div class="user-box">
-        <input type="email" class="formulario-input" maxlength="40" required />
-        <label>Email</label>
-      </div>
-      <div class="user-box">
-        <input type="password" class="formulario-input" required />
-        <label>Senha</label>
-      </div>
+     
+     
       <div class="user-box">
         <input
           type="password"
@@ -52,18 +49,16 @@
           maxlength="40"
           required
         />
-        <label>Confirmar Senha</label>
+        <label>Senha</label>
       </div>
 
       <input type="submit" class="formulario-input formulario-button" />
-      <p>Já é um menbro faça?<a href="../Html/login.html"> Faça login</a></p>
+     
     </form>
+  </main>
 
-    <footer id="footer">
-      <p class="copy">&copy Alguns Direitos Reservados</p>
-    </footer>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
-  </body>
+</body>
 </html>

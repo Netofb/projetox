@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="./Styles/main.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
     <link rel="stylesheet" href="./Styles/formulario.css" />
-
+    <link rel="stylesheet" href="./Styles/login.css" />
+    <link rel="stylesheet" href="./Styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./Styles/style.css">
     <title>Projeto/x</title>
   </head>
   <body>
@@ -37,37 +39,45 @@
         <ul class="header-menu" id="menu">
          
           <li><a href="./Html/registro.html">Registro</a></li>
+           <li><a href="./Html/login.html">Login</a></li>
         </ul>
       </nav>
     </header>
     <!--  HEADER FIM   -->
     <!--  CARD INICIO   -->
-    <main class="main">
-      <article class="card">
-        <section class="img-card"><img src="" alt="" /></section>
-        <section>
-          <h1 class="card-title">Card Title</h1>
-          <h4 class="card-subtitle">Card Subtitle</h4>
-          <p class="descricao">Breve Descricao</p>
+    <main>
+     
+      <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            
+                            <div class="card-image">
+                                <img src="./imgs/icon.svg" alt="" class="card-img">
+                            </div>
+                        </div>
 
-          <div class="buttons-card">
-            <div class="card-links">
-              <a href=""><img src="./imgs/link.png" alt="" width="44px" /></a>
-              <p class="card-text-link">Preview</p>
-            </div>
-            <div class="card-links">
-              <a href=""><img src="./imgs/github 1.png 1.png" alt="" /></a>
-              <p class="card-text-link">Code</p>
-            </div>
-          </div>
-        </section>
-      </article>
+                        <div class="card-content">
+                            <h2 class="name">Titulo Projeto</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">Ver Projeto</button>
+                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+      
     </main>
     <!--  CARD FIM   -->
     <footer id="footer">
       <p class="copy">&copy Alguns Direitos Reservados</p>
     </footer>
-
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
