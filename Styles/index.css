@@ -7,14 +7,14 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
-  --cor-primaria: #ff0000;
+  --color-efect: #FFB800;
   --tamanho-fonte: 16px;
-  --background: #262626;
-  --header-backgtound: #1b1d20;
+  --background: #252525;
+  --header-backgtound: #020202;
   --button-color: #d9d9d9;
-  --font-color: #080d0d;
+  --font-color: #fff;
   --font: "Poppins", Arial, Helvetica, sans-serif;
-  --foter-background: #808080;
+  --foter-background: #FFB800;
 }
 body {
   background-color: var(--background);
